@@ -15,25 +15,25 @@ app.all("*", function (req, res, next) {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-const file_now_pes = "./data/now_pes.json";
+const file_now_pes = "./data/member.json";
 
 const moduleName = "CuberEngine FileServer";
 const moduleVersion = "0.1.0";
 console.log(moduleName + " (" + moduleVersion + ") Start...");
 console.log("Listening on Port: " + port);
 
-app.get("/now_pes", (req, res) => {
+app.get("/member", (req, res) => {
   let obj = jsonfile.readFileSync(file_now_pes, {
     encoding: "utf8",
     flag: "r",
   });
-  console.log("GET now_pes:" + JSON.stringify(obj));
+  console.log("GET member:" + JSON.stringify(obj));
   res.status(200).json(obj);
 });
 
-app.post("/now_pes", (req, res) => {
-  console.log("POST now_pes:" + req.body);
-  jsonfile.writeFileSync(file_now_pes, JSON.parse(req.body));
+app.post("/member", (req, res) => {
+  console.log("POST member:" + JSON.stringify(req.body));
+  jsonfile.writeFileSync(file_now_pes, req.body);
   let obj = jsonfile.readFileSync(file_now_pes, {
     encoding: "utf8",
     flag: "r",
