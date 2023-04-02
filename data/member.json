@@ -1,40 +1,17 @@
 {
-    "members": [
-        {
-            "id": 1,
-            "name": "CuberQAQ",
-            "todayPes": 10,
-            "fcs": 10
-        },
-        {
-            "id": 2,
-            "name": "Qiaolang",
-            "todayPes": 10,
-            "fcs": 10
-        },
-        {
-            "id": 3,
-            "name": "XQY",
-            "todayPes": 10,
-            "fcs": 10
-        },
-        {
-            "id": 4,
-            "name": "LRT",
-            "todayPes": 10,
-            "fcs": 10
-        },
-        {
-            "id": 5,
-            "name": "SaltyEgg",
-            "todayPes": 10,
-            "fcs": 10
-        },
-        {
-            "id": 6,
-            "name": "WindyDance",
-            "todayPes": 10,
-            "fcs": 10
-        }
-    ]
+  "date": {
+    "year": 2023,
+    "month": 4,
+    "day": 2
+  },
+  "members": [
+    { "id": 1, "name": "CuberQAQ", "todayPes": 10, "fcs": 10 },
+    { "id": 2, "name": "Qiaolang", "todayPes": 10, "fcs": 10 },
+    { "id": 3, "name": "XQY", "todayPes": 10, "fcs": 10 },
+    { "id": 4, "name": "LRT", "todayPes": 10, "fcs": 10 },
+    { "id": 5, "name": "SaltyEgg", "todayPes": 10, "fcs": 10 },
+    { "id": 6, "name": "WindyDance", "todayPes": 10, "fcs": 10 }
+  ],
+  "log": [
+  ]
 }
